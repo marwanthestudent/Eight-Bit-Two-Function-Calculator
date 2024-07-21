@@ -8,6 +8,9 @@ This project is an eight-bit, two-function calculator designed to perform additi
 - **Output Unit (OU):** Displays results on the LED and seven-segment displays.
 - **Control Unit (CU):** Manages the state transitions for the calculator's operation.
 
+<img width="471" alt="Screenshot 2024-07-20 at 8 30 30 PM" src="https://github.com/user-attachments/assets/a4448b66-76dd-4f8a-8874-241fe555b372"><br>
+<img width="471" alt="image" src="https://github.com/user-attachments/assets/a09c73f9-ebee-4a7f-aa3e-d99c548bf499">
+
 ## Lessons Learned
 - Designed, built, and tested combinational and sequential logic circuits using Verilog HDL.
 - Implemented and verified the functionality on an FPGA platform.
