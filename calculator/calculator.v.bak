@@ -1,0 +1,41 @@
+module calculator
+
+// I/O declarations
+
+// wire and reg declarations
+
+// assign statements
+
+// control unit instantiation
+
+// input unit instantiation
+
+// arithmetic unit instantiation
+lab9 lab9_inst
+(
+	.A(A_sig) ,	// input [7:0] A_sig
+	.InA(InA_sig) ,	// input  InA_sig
+	.InB(InB_sig) ,	// input  InB_sig
+	.Out(Out_sig) ,	// input  Out_sig
+	.Clear(Clear_sig) ,	// input  Clear_sig
+	.Add_Subtract(Add_Subtract_sig) ,	// input  Add_Subtract_sig
+	.Rout(Rout_sig) ,	// output [7:0] Rout_sig
+	.Ccout(Ccout_sig) ,	// output [3:0] Ccout_sig
+	.HEX2(HEX2_sig) ,	// output [0:6] HEX2_sig
+	.HEX1(HEX1_sig) ,	// output [0:6] HEX1_sig
+	.HEX0(HEX0_sig) 	// output [0:6] HEX0_sig
+);
+
+// output unit instantiation
+lab10 lab10_inst
+(
+	.A(A_sig) ,	// input [N-1:0] A_sig
+	.Hex4(Hex4_sig) ,	// output  Hex4_sig
+	.Hex1(Hex1_sig) ,	// output [6:0] Hex1_sig
+	.Hex2(Hex2_sig) ,	// output [6:0] Hex2_sig
+	.Hex3(Hex3_sig) 	// output [6:0] Hex3_sig
+);
+
+defparam lab10_inst.N = 8;
+
+endmodule

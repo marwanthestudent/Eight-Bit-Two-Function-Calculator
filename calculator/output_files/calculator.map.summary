@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Tue Apr 30 20:46:23 2024
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : calculator
+Top-level Entity Name : calculator
+Family : MAX 10
+Total logic elements : 253
+    Total combinational functions : 233
+    Dedicated logic registers : 87
+Total registers : 87
+Total pins : 44
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

@@ -1,0 +1,7 @@
+Warning (10268): Verilog HDL information at Lab12.v(28): always construct contains both blocking and non-blocking assignments File: D:/MyCSE2441Labs/lab12/Lab12.v Line: 28
+Info (10281): Verilog HDL Declaration information at lab10.v(7): object "ONES" differs only in case from object "ones" in the same scope File: D:/MyCSE2441Labs/lab10/lab10.v Line: 7
+Info (10281): Verilog HDL Declaration information at lab10.v(7): object "TENS" differs only in case from object "tens" in the same scope File: D:/MyCSE2441Labs/lab10/lab10.v Line: 7
+Info (10281): Verilog HDL Declaration information at lab10.v(8): object "HUNDREDS" differs only in case from object "hundreds" in the same scope File: D:/MyCSE2441Labs/lab10/lab10.v Line: 8
+Info (10281): Verilog HDL Declaration information at lab9.v(6): object "HEX0" differs only in case from object "Hex0" in the same scope File: D:/MyCSE2441Labs/lab9/lab9.v Line: 6
+Info (10281): Verilog HDL Declaration information at lab9.v(6): object "HEX1" differs only in case from object "Hex1" in the same scope File: D:/MyCSE2441Labs/lab9/lab9.v Line: 6
+Info (10281): Verilog HDL Declaration information at lab9.v(6): object "HEX2" differs only in case from object "Hex2" in the same scope File: D:/MyCSE2441Labs/lab9/lab9.v Line: 6
