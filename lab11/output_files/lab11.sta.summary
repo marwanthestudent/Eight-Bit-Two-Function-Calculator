@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -6.698
+TNS   : -81.601
+
+Type  : Slow 1200mV 85C Model Setup 'row[0]'
+Slack : -3.058
+TNS   : -32.392
+
+Type  : Slow 1200mV 85C Model Setup 'keypad_base:keypad_base|clock_div:keypad_clock_divider|clk_track'
+Slack : -1.675
+TNS   : -9.921
+
+Type  : Slow 1200mV 85C Model Hold 'row[0]'
+Slack : -0.637
+TNS   : -1.625
+
+Type  : Slow 1200mV 85C Model Hold 'keypad_base:keypad_base|clock_div:keypad_clock_divider|clk_track'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.622
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'row[0]'
+Slack : -3.000
+TNS   : -67.016
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -49.299
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'keypad_base:keypad_base|clock_div:keypad_clock_divider|clk_track'
+Slack : -1.403
+TNS   : -11.224
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -6.047
+TNS   : -70.697
+
+Type  : Slow 1200mV 0C Model Setup 'row[0]'
+Slack : -2.844
+TNS   : -29.059
+
+Type  : Slow 1200mV 0C Model Setup 'keypad_base:keypad_base|clock_div:keypad_clock_divider|clk_track'
+Slack : -1.527
+TNS   : -8.709
+
+Type  : Slow 1200mV 0C Model Hold 'row[0]'
+Slack : -0.712
+TNS   : -2.008
+
+Type  : Slow 1200mV 0C Model Hold 'keypad_base:keypad_base|clock_div:keypad_clock_divider|clk_track'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.575
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'row[0]'
+Slack : -3.000
+TNS   : -62.471
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -49.299
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'keypad_base:keypad_base|clock_div:keypad_clock_divider|clk_track'
+Slack : -1.403
+TNS   : -11.224
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -2.134
+TNS   : -14.358
+
+Type  : Fast 1200mV 0C Model Setup 'row[0]'
+Slack : -1.168
+TNS   : -13.644
+
+Type  : Fast 1200mV 0C Model Setup 'keypad_base:keypad_base|clock_div:keypad_clock_divider|clk_track'
+Slack : -0.617
+TNS   : -2.348
+
+Type  : Fast 1200mV 0C Model Hold 'row[0]'
+Slack : -0.287
+TNS   : -0.702
+
+Type  : Fast 1200mV 0C Model Hold 'keypad_base:keypad_base|clock_div:keypad_clock_divider|clk_track'
+Slack : 0.166
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.238
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'row[0]'
+Slack : -3.000
+TNS   : -42.606
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -37.002
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'keypad_base:keypad_base|clock_div:keypad_clock_divider|clk_track'
+Slack : -1.000
+TNS   : -8.000
+
+------------------------------------------------------------

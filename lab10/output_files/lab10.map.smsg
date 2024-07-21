@@ -1,0 +1,3 @@
+Info (10281): Verilog HDL Declaration information at lab10.v(7): object "ONES" differs only in case from object "ones" in the same scope File: D:/MyCSE2441Labs/lab10/lab10.v Line: 7
+Info (10281): Verilog HDL Declaration information at lab10.v(7): object "TENS" differs only in case from object "tens" in the same scope File: D:/MyCSE2441Labs/lab10/lab10.v Line: 7
+Info (10281): Verilog HDL Declaration information at lab10.v(8): object "HUNDREDS" differs only in case from object "hundreds" in the same scope File: D:/MyCSE2441Labs/lab10/lab10.v Line: 8

@@ -1,0 +1,20 @@
+module MealyFSM (
+	input trig,clk,clear_entry,clear_all,
+	input [3:0] value,
+	output reg reset,load_A,load_B,add_sub,load_R,IUAU
+);
+	reg [2:0] state, nextstate;
+	parameter S0 = 2'b00, S1 = 2'b01, S2 = 2'b10, S3 = 2'b11, s4 = 3'b100;
+	
+	always @ (posedge CLK, negedge CLR)
+	
+		if (CLR == 0) state <= S0;
+		else case (state,trig)
+			S0: begin nextstate = S1; reset = 0;load_A = 1 ;load_B = 1;load_R = 1, IUAU=0; end
+			S1: begin nextstate = S2; reset = 1;load_A = 0;load_B = 1;load_R = 1, IUAU=0; end
+			S2: begin nextstate = S3; reset = 1;load_A = 1;load_B = 1;load_R = 1, IUAU=0; end
+			S3: begin nextstate = S3; reset = 1;load_A = 1;load_B = 0;load_R = 1, IUAU=0; end
+			S4: begin nextstate = S3; reset = 1;load_A = 1;load_B = 1;load_R = 0, IUAU=1; end
+		endcase
+		
+endmodule

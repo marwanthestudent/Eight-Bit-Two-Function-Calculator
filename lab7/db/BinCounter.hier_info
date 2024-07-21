@@ -1,0 +1,12 @@
+|BinCounter
+y0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst2.ACLR
+Clear => inst1.ACLR
+Clear => inst.ACLR
+Count => inst2.CLK
+Count => inst1.CLK
+Count => inst.CLK
+y1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+y2 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+

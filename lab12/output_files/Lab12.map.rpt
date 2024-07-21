@@ -1,0 +1,482 @@
+Analysis & Synthesis report for Lab12
+Thu Apr 25 17:21:53 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Lab12|state
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |Lab12
+ 14. Parameter Settings for User Entity Instance: OneHzClk:OneHzClk_inst|divbyt:div5
+ 15. Parameter Settings for User Entity Instance: OneHzClk:OneHzClk_inst|divbyt:div10
+ 16. Parameter Settings for User Entity Instance: OneHzClk:OneHzClk_inst|divbyt:div1000L
+ 17. Parameter Settings for User Entity Instance: OneHzClk:OneHzClk_inst|divbyt:div1000H
+ 18. Port Connectivity Checks: "OneHzClk:OneHzClk_inst|divbyt:div1000H"
+ 19. Port Connectivity Checks: "OneHzClk:OneHzClk_inst|divbyt:div1000L"
+ 20. Port Connectivity Checks: "OneHzClk:OneHzClk_inst|divbyt:div10"
+ 21. Port Connectivity Checks: "OneHzClk:OneHzClk_inst|divbyt:div5"
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
+ 25. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Apr 25 17:21:53 2024       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; Lab12                                       ;
+; Top-level Entity Name              ; Lab12                                       ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 70                                          ;
+;     Total combinational functions  ; 69                                          ;
+;     Dedicated logic registers      ; 36                                          ;
+; Total registers                    ; 36                                          ;
+; Total pins                         ; 16                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; Lab12              ; Lab12              ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                   ;
++-----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
+; File Name with User-Entered Path  ; Used in Netlist ; File Type              ; File Name with Absolute Path                    ; Library ;
++-----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
+; ../New folder/clk1/divbyt.v       ; yes             ; User Verilog HDL File  ; D:/MyCSE2441Labs/New folder/clk1/divbyt.v       ;         ;
+; ../New folder/theThing/OneHzClk.v ; yes             ; User Verilog HDL File  ; D:/MyCSE2441Labs/New folder/theThing/OneHzClk.v ;         ;
+; Lab12.v                           ; yes             ; User Verilog HDL File  ; D:/MyCSE2441Labs/lab12/Lab12.v                  ;         ;
++-----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
+
+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimated Total logic elements              ; 70              ;
+;                                             ;                 ;
+; Total combinational functions               ; 69              ;
+; Logic element usage by number of LUT inputs ;                 ;
+;     -- 4 input functions                    ; 15              ;
+;     -- 3 input functions                    ; 27              ;
+;     -- <=2 input functions                  ; 27              ;
+;                                             ;                 ;
+; Logic elements by mode                      ;                 ;
+;     -- normal mode                          ; 51              ;
+;     -- arithmetic mode                      ; 18              ;
+;                                             ;                 ;
+; Total registers                             ; 36              ;
+;     -- Dedicated logic registers            ; 36              ;
+;     -- I/O registers                        ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 16              ;
+;                                             ;                 ;
+; Embedded Multiplier 9-bit elements          ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; clear_all~input ;
+; Maximum fan-out                             ; 36              ;
+; Total fan-out                               ; 324             ;
+; Average fan-out                             ; 2.36            ;
++---------------------------------------------+-----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                           ;
++-----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                           ; Entity Name ; Library Name ;
++-----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------+-------------+--------------+
+; |Lab12                      ; 69 (12)             ; 36 (5)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 16   ; 0            ; 0          ; |Lab12                                        ; Lab12       ; work         ;
+;    |OneHzClk:OneHzClk_inst| ; 57 (0)              ; 31 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab12|OneHzClk:OneHzClk_inst                 ; OneHzClk    ; work         ;
+;       |divbyt:div1000H|     ; 24 (24)             ; 11 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab12|OneHzClk:OneHzClk_inst|divbyt:div1000H ; divbyt      ; work         ;
+;       |divbyt:div1000L|     ; 24 (24)             ; 11 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab12|OneHzClk:OneHzClk_inst|divbyt:div1000L ; divbyt      ; work         ;
+;       |divbyt:div10|        ; 5 (5)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab12|OneHzClk:OneHzClk_inst|divbyt:div10    ; divbyt      ; work         ;
+;       |divbyt:div5|         ; 4 (4)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab12|OneHzClk:OneHzClk_inst|divbyt:div5     ; divbyt      ; work         ;
++-----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------+
+; State Machine - |Lab12|state                                    ;
++----------+----------+----------+----------+----------+----------+
+; Name     ; state.S3 ; state.S2 ; state.S1 ; state.S0 ; state.S4 ;
++----------+----------+----------+----------+----------+----------+
+; state.S0 ; 0        ; 0        ; 0        ; 0        ; 0        ;
+; state.S1 ; 0        ; 0        ; 1        ; 1        ; 0        ;
+; state.S2 ; 0        ; 1        ; 0        ; 1        ; 0        ;
+; state.S3 ; 1        ; 0        ; 0        ; 1        ; 0        ;
+; state.S4 ; 0        ; 0        ; 0        ; 1        ; 1        ;
++----------+----------+----------+----------+----------+----------+
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; add_sub$latch                                      ; Selector1           ; yes                    ;
+; Number of user-specified and inferred latches = 1  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; state~4                               ; Lost fanout        ;
+; state~5                               ; Lost fanout        ;
+; Total Number of Removed Registers = 2 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 36    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |Lab12|OneHzClk:OneHzClk_inst|divbyt:div1000H|COUNT[9] ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |Lab12|OneHzClk:OneHzClk_inst|divbyt:div1000L|COUNT[9] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Lab12|OneHzClk:OneHzClk_inst|divbyt:div10|COUNT[3]    ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Lab12|OneHzClk:OneHzClk_inst|divbyt:div5|COUNT[2]     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Lab12 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; S0             ; 000   ; Unsigned Binary                              ;
+; S1             ; 001   ; Unsigned Binary                              ;
+; S2             ; 010   ; Unsigned Binary                              ;
+; S3             ; 011   ; Unsigned Binary                              ;
+; S4             ; 100   ; Unsigned Binary                              ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: OneHzClk:OneHzClk_inst|divbyt:div5 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; N              ; 101   ; Unsigned Binary                                        ;
+; M              ; 011   ; Unsigned Binary                                        ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: OneHzClk:OneHzClk_inst|divbyt:div10 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 1010  ; Unsigned Binary                                         ;
+; M              ; 0100  ; Unsigned Binary                                         ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: OneHzClk:OneHzClk_inst|divbyt:div1000L ;
++----------------+------------+-------------------------------------------------------+
+; Parameter Name ; Value      ; Type                                                  ;
++----------------+------------+-------------------------------------------------------+
+; N              ; 1111101000 ; Unsigned Binary                                       ;
+; M              ; 1010       ; Unsigned Binary                                       ;
++----------------+------------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: OneHzClk:OneHzClk_inst|divbyt:div1000H ;
++----------------+------------+-------------------------------------------------------+
+; Parameter Name ; Value      ; Type                                                  ;
++----------------+------------+-------------------------------------------------------+
+; N              ; 1111101000 ; Unsigned Binary                                       ;
+; M              ; 1010       ; Unsigned Binary                                       ;
++----------------+------------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "OneHzClk:OneHzClk_inst|divbyt:div1000H"                                                                                    ;
++-------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                   ;
++-------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; COUNT ; Output ; Warning  ; Output or bidir port (10 bits) is wider than the port expression (1 bits) it drives; bit(s) "COUNT[9..1]" have no fanouts ;
++-------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "OneHzClk:OneHzClk_inst|divbyt:div1000L"                                                                                    ;
++-------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                   ;
++-------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; COUNT ; Output ; Warning  ; Output or bidir port (10 bits) is wider than the port expression (1 bits) it drives; bit(s) "COUNT[9..1]" have no fanouts ;
++-------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "OneHzClk:OneHzClk_inst|divbyt:div10"                                                                                      ;
++-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                  ;
++-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; COUNT ; Output ; Warning  ; Output or bidir port (4 bits) is wider than the port expression (1 bits) it drives; bit(s) "COUNT[3..1]" have no fanouts ;
++-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "OneHzClk:OneHzClk_inst|divbyt:div5"                                                                                       ;
++-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                  ;
++-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; COUNT ; Output ; Warning  ; Output or bidir port (3 bits) is wider than the port expression (1 bits) it drives; bit(s) "COUNT[2..1]" have no fanouts ;
+; COUNT ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                      ;
++-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 16                          ;
+; cycloneiii_ff         ; 36                          ;
+;     CLR               ; 32                          ;
+;     ENA               ; 4                           ;
+; cycloneiii_lcell_comb ; 72                          ;
+;     arith             ; 18                          ;
+;         2 data inputs ; 18                          ;
+;     normal            ; 54                          ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 27                          ;
+;         4 data inputs ; 15                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.24                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Thu Apr 25 17:21:44 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab12 -c Lab12
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /mycse2441labs/new folder/clk1/divbyt.v
+    Info (12023): Found entity 1: divbyt File: D:/MyCSE2441Labs/New folder/clk1/divbyt.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /mycse2441labs/new folder/thething/onehzclk.v
+    Info (12023): Found entity 1: OneHzClk File: D:/MyCSE2441Labs/New folder/theThing/OneHzClk.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file lab12.v
+    Info (12023): Found entity 1: Lab12 File: D:/MyCSE2441Labs/lab12/Lab12.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at OneHzClk.v(13): created implicit net for "count" File: D:/MyCSE2441Labs/New folder/theThing/OneHzClk.v Line: 13
+Info (12127): Elaborating entity "Lab12" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at Lab12.v(30): truncated value with size 32 to match size of target (1) File: D:/MyCSE2441Labs/lab12/Lab12.v Line: 30
+Warning (10230): Verilog HDL assignment warning at Lab12.v(46): truncated value with size 32 to match size of target (1) File: D:/MyCSE2441Labs/lab12/Lab12.v Line: 46
+Warning (10230): Verilog HDL assignment warning at Lab12.v(48): truncated value with size 32 to match size of target (1) File: D:/MyCSE2441Labs/lab12/Lab12.v Line: 48
+Warning (10240): Verilog HDL Always Construct warning at Lab12.v(28): inferring latch(es) for variable "add_sub", which holds its previous value in one or more paths through the always construct File: D:/MyCSE2441Labs/lab12/Lab12.v Line: 28
+Info (10041): Inferred latch for "add_sub" at Lab12.v(28) File: D:/MyCSE2441Labs/lab12/Lab12.v Line: 28
+Info (12128): Elaborating entity "OneHzClk" for hierarchy "OneHzClk:OneHzClk_inst" File: D:/MyCSE2441Labs/lab12/Lab12.v Line: 18
+Info (12128): Elaborating entity "divbyt" for hierarchy "OneHzClk:OneHzClk_inst|divbyt:div5" File: D:/MyCSE2441Labs/New folder/theThing/OneHzClk.v Line: 14
+Info (12128): Elaborating entity "divbyt" for hierarchy "OneHzClk:OneHzClk_inst|divbyt:div10" File: D:/MyCSE2441Labs/New folder/theThing/OneHzClk.v Line: 21
+Info (12128): Elaborating entity "divbyt" for hierarchy "OneHzClk:OneHzClk_inst|divbyt:div1000L" File: D:/MyCSE2441Labs/New folder/theThing/OneHzClk.v Line: 29
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13012): Latch add_sub$latch has unsafe behavior File: D:/MyCSE2441Labs/lab12/Lab12.v Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal value[0] File: D:/MyCSE2441Labs/lab12/Lab12.v Line: 3
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 2 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file D:/MyCSE2441Labs/lab12/output_files/Lab12.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 88 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 72 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4778 megabytes
+    Info: Processing ended: Thu Apr 25 17:21:53 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:19
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/MyCSE2441Labs/lab12/output_files/Lab12.map.smsg.
+
+

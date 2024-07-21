@@ -1,0 +1,73 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "load_A",
+					"strict" : false
+				},
+				{
+					"name" : "load_B",
+					"strict" : false
+				},
+				{
+					"name" : "load_R",
+					"strict" : false
+				},
+				{
+					"name" : "IUAU",
+					"strict" : false
+				},
+				{
+					"name" : "add_sub",
+					"strict" : false
+				},
+				{
+					"name" : "debugLed[0]",
+					"strict" : false
+				},
+				{
+					"name" : "debugLed[1]",
+					"strict" : false
+				},
+				{
+					"name" : "debugLed[2]",
+					"strict" : false
+				},
+				{
+					"name" : "clear_entry",
+					"strict" : false
+				},
+				{
+					"name" : "value[1]",
+					"strict" : false
+				},
+				{
+					"name" : "value[3]",
+					"strict" : false
+				},
+				{
+					"name" : "value[2]",
+					"strict" : false
+				},
+				{
+					"name" : "value[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clear_all",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

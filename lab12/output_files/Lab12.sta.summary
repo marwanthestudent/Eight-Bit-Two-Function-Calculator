@@ -1,0 +1,221 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'OneHzClk:OneHzClk_inst|divbyt:div1000L|OUT'
+Slack : -2.149
+TNS   : -19.871
+
+Type  : Slow 1200mV 85C Model Setup 'OneHzClk:OneHzClk_inst|divbyt:div10|OUT'
+Slack : -1.977
+TNS   : -19.991
+
+Type  : Slow 1200mV 85C Model Setup 'OneHzClk:OneHzClk_inst|divbyt:div1000H|OUT'
+Slack : -1.347
+TNS   : -3.228
+
+Type  : Slow 1200mV 85C Model Setup 'value[1]'
+Slack : -1.031
+TNS   : -1.031
+
+Type  : Slow 1200mV 85C Model Setup 'OneHzClk:OneHzClk_inst|divbyt:div5|OUT'
+Slack : -0.206
+TNS   : -0.671
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -0.140
+TNS   : -0.343
+
+Type  : Slow 1200mV 85C Model Hold 'OneHzClk:OneHzClk_inst|divbyt:div1000H|OUT'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'OneHzClk:OneHzClk_inst|divbyt:div5|OUT'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'value[1]'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'OneHzClk:OneHzClk_inst|divbyt:div1000L|OUT'
+Slack : 1.006
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'OneHzClk:OneHzClk_inst|divbyt:div10|OUT'
+Slack : 1.007
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -8.612
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'value[1]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'OneHzClk:OneHzClk_inst|divbyt:div1000L|OUT'
+Slack : -1.403
+TNS   : -15.433
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'OneHzClk:OneHzClk_inst|divbyt:div10|OUT'
+Slack : -1.403
+TNS   : -15.433
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'OneHzClk:OneHzClk_inst|divbyt:div1000H|OUT'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'OneHzClk:OneHzClk_inst|divbyt:div5|OUT'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 0C Model Setup 'OneHzClk:OneHzClk_inst|divbyt:div1000L|OUT'
+Slack : -1.893
+TNS   : -17.359
+
+Type  : Slow 1200mV 0C Model Setup 'OneHzClk:OneHzClk_inst|divbyt:div10|OUT'
+Slack : -1.729
+TNS   : -17.461
+
+Type  : Slow 1200mV 0C Model Setup 'OneHzClk:OneHzClk_inst|divbyt:div1000H|OUT'
+Slack : -1.297
+TNS   : -3.133
+
+Type  : Slow 1200mV 0C Model Setup 'value[1]'
+Slack : -1.001
+TNS   : -1.001
+
+Type  : Slow 1200mV 0C Model Setup 'OneHzClk:OneHzClk_inst|divbyt:div5|OUT'
+Slack : -0.102
+TNS   : -0.265
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -0.039
+TNS   : -0.063
+
+Type  : Slow 1200mV 0C Model Hold 'OneHzClk:OneHzClk_inst|divbyt:div5|OUT'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'OneHzClk:OneHzClk_inst|divbyt:div1000H|OUT'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.338
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'value[1]'
+Slack : 0.553
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'OneHzClk:OneHzClk_inst|divbyt:div1000L|OUT'
+Slack : 0.933
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'OneHzClk:OneHzClk_inst|divbyt:div10|OUT'
+Slack : 0.933
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -8.612
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'value[1]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'OneHzClk:OneHzClk_inst|divbyt:div1000L|OUT'
+Slack : -1.403
+TNS   : -15.433
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'OneHzClk:OneHzClk_inst|divbyt:div10|OUT'
+Slack : -1.403
+TNS   : -15.433
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'OneHzClk:OneHzClk_inst|divbyt:div1000H|OUT'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'OneHzClk:OneHzClk_inst|divbyt:div5|OUT'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Fast 1200mV 0C Model Setup 'OneHzClk:OneHzClk_inst|divbyt:div1000L|OUT'
+Slack : -0.305
+TNS   : -1.779
+
+Type  : Fast 1200mV 0C Model Setup 'OneHzClk:OneHzClk_inst|divbyt:div10|OUT'
+Slack : -0.198
+TNS   : -1.641
+
+Type  : Fast 1200mV 0C Model Setup 'OneHzClk:OneHzClk_inst|divbyt:div1000H|OUT'
+Slack : -0.027
+TNS   : -0.027
+
+Type  : Fast 1200mV 0C Model Setup 'value[1]'
+Slack : 0.250
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'OneHzClk:OneHzClk_inst|divbyt:div5|OUT'
+Slack : 0.485
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : 0.519
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'OneHzClk:OneHzClk_inst|divbyt:div1000H|OUT'
+Slack : 0.150
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'OneHzClk:OneHzClk_inst|divbyt:div5|OUT'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'value[1]'
+Slack : 0.290
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'OneHzClk:OneHzClk_inst|divbyt:div1000L|OUT'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'OneHzClk:OneHzClk_inst|divbyt:div10|OUT'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -7.709
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'value[1]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'OneHzClk:OneHzClk_inst|divbyt:div1000L|OUT'
+Slack : -1.000
+TNS   : -11.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'OneHzClk:OneHzClk_inst|divbyt:div10|OUT'
+Slack : -1.000
+TNS   : -11.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'OneHzClk:OneHzClk_inst|divbyt:div1000H|OUT'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'OneHzClk:OneHzClk_inst|divbyt:div5|OUT'
+Slack : -1.000
+TNS   : -5.000
+
+------------------------------------------------------------
