@@ -3,10 +3,10 @@
 This project is an eight-bit, two-function calculator designed to perform addition and subtraction using Verilog. This calculator is implemented on a DE10-Lite FPGA board with a keypad interface.
 
 ## Features
-- **Arithmetic Unit (AU):** Performs addition and subtraction operations.
-- **Input Unit (IU):** Handles input from the keypad.
-- **Output Unit (OU):** Displays results on the LED and seven-segment displays.
-- **Control Unit (CU):** Manages the state transitions for the calculator's operation.
+- **Arithmetic Unit (AU):** Designed for 8-bit signed operations, handling overflow and negative results using two’s complement arithmetic.
+- **Input Unit (IU):** Developed logic for real-time input processing from a keypad, including support for negative number entry and multi-digit inputs.
+- **Output Unit (OU):** Managed output through hexadecimal to seven-segment conversion, with error handling for display anomalies and partial LED activation.
+- **Control Unit (CU):** Implemented a finite state machine (FSM) in Verilog to control operation sequencing, input validation, and display output management.
 
 <img width="471" alt="Screenshot 2024-07-20 at 8 30 30 PM" src="https://github.com/user-attachments/assets/a4448b66-76dd-4f8a-8874-241fe555b372"><br>
 <img width="471" alt="image" src="https://github.com/user-attachments/assets/a09c73f9-ebee-4a7f-aa3e-d99c548bf499">
