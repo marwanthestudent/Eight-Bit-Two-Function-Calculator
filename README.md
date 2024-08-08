@@ -5,7 +5,7 @@ This project is an eight-bit, two-function calculator designed to perform additi
 ## Features
 - **Arithmetic Unit (AU):** Designed for 8-bit signed operations, handling overflow and negative results using two’s complement arithmetic.
 - **Input Unit (IU):** Developed logic for real-time input processing from a keypad, including support for negative number entry and multi-digit inputs.
-- **Output Unit (OU):** Managed output through hexadecimal to seven-segment conversion, with error handling for display anomalies and partial LED activation.
+- **Output Unit (OU):** Managed output through hexadecimal to seven-segment conversion.
 - **Control Unit (CU):** Implemented a finite state machine (FSM) in Verilog to control operation sequencing, input validation, and display output management.
 
 <img width="471" alt="Screenshot 2024-07-20 at 8 30 30 PM" src="https://github.com/user-attachments/assets/a4448b66-76dd-4f8a-8874-241fe555b372"><br>
